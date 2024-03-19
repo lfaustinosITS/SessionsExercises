@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <title>Shapes and debounce movements</title>
+</head>
+
+<body>
+    <div id="container">
+        <div id="canvasContainer">
+            <canvas id="gridCanvas" width="500" height="500"></canvas>
+            <div id="leftColumn">
+                <label for="switchDebounce">Use debounce</label>
+                <input type="checkbox" id="switchDebounce">
+                <label for="compress">Use compress</label>
+                <input type="checkbox" id="compress">
+                <label for="changeTopology">Topology:</label>
+                <select id="changeTopology">
+                    <option value='unbounded'>Unbounded</option>
+                    <option value='rectangle'>Rectangle</option>
+                    <option value='cylinder'>Cylinder</option>
+                    <option value='torus'>Torus</option>
+                    <option value='moebius'>Moebius</option>
+                    <option value='kleinBottle'>Klein Bottle</option>
+                    <option value='proyectivePlane'>Proyective Plain</option>
+                </select>
+                <label for="changeShape">Shape:</label>
+                <select id="changeShape">
+                    <option value='square'>Square</option>
+                    <option value='circle'>Circle</option>
+                    <option value='triangle'>Triangle</option>
+                    <option value='mm'>Bear</option>
+                </select>
+            </div>
+            <div id="rightColumn">
+                <div id="displayCoordinates">Coordinates</div>
+                <label for="outputType">Output Format:</label>
+                <select id="outputType">
+                    <option value='decimal'>Decimal</option>
+                    <option value='roman'>Roman</option>
+                    <option value='hex'>Hex</option>
+                    <option value='binary'>Binary</option>
+                </select>
+                <div id="buttonContainer">
+                    <button id="left">🢀</button>
+                    <button id="up">🢁</button>
+                    <button id="down">🢃</button>
+                    <button id="right">🢂</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="module" src="shapeMovementObject.js"></script>
+</body>
+
+</html>

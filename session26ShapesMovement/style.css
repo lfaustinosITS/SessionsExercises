@@ -1,0 +1,46 @@
+#canvasContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    align-items: center;
+    justify-items: center;
+    max-width: 700px;
+}
+
+canvas {
+    grid-column: span 2;
+    width: 100%;
+    max-width: 500px; 
+    height: auto; 
+}
+
+select,
+input[type="checkbox"] {
+
+    margin-bottom: 10px;
+}
+
+#buttonContainer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px;
+    justify-items: center;
+}
+
+#buttonContainer button {
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+}
+
+#rightColumn {
+    display: grid;
+    gap: 10px;
+    align-items: center;
+}
+#leftColumn {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    align-items: center;
+}
